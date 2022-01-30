@@ -10,7 +10,7 @@ const Header = ({ logo, logoName, title }) => {
       <div className="container-header">
         <div className="logo">
           <img src={logo} alt={logoName} />
-          <h2>{title}</h2>
+          <h2 className="fluid-3 text-center text-w-600">{title}</h2>
         </div>
       </div>
     </header>

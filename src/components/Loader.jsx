@@ -1,13 +1,20 @@
 /* **************** Imports **************** */
 import React from 'react'
-import './App.css'
+import '../styles/Loader.css'
 
 /* **************** Variables **************** */
 
 /* **************** Functions **************** */
-function App() {
-  return <h1>Hello World</h1>
+const Loader = () => {
+  return (
+    <div className="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  )
 }
 
 /* **************** Code Execution **************** */
-export default App
+export default Loader
