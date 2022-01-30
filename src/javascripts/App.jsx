@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import logo from '../assets/svg/favicon.svg'
 import CrudApi from '../components/CrudApi'
+import { CrudContextProvider } from '../context/CrudContext'
 
 /* **************** Variables **************** */
 const logoName = 'Vite React'
@@ -14,7 +15,9 @@ function App() {
     <>
       <Header logo={logo} logoName={logoName} title={title} />
       <div className="container">
-        <CrudApi />
+        <CrudContextProvider>
+          <CrudApi />
+        </CrudContextProvider>
       </div>
     </>
   )

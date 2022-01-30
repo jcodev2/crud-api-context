@@ -1,11 +1,13 @@
 /* **************** Imports **************** */
-import React from 'react'
+import React, { useContext } from 'react'
+import CrudContext from '../context/CrudContext'
 
 /* **************** Variables **************** */
 
 /* **************** Functions **************** */
 
-const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
+const CrudTableRow = ({ el }) => {
+  const { setDataToEdit, deleteData } = useContext(CrudContext)
   const { name, constellation, id } = el
 
   return (
